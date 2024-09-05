@@ -50,7 +50,6 @@ export default function UploadComponent() {
 
   return (
     <div className="min-h-screen text-white flex flex-col">
-      <Header></Header>
 
       {/* Upload Section */}
       <div className="flex-grow flex flex-col p-5 items-center justify-center space-y-6">
@@ -133,7 +132,6 @@ export default function UploadComponent() {
       </div>
 
       {/* Footer */}
-      <Footer></Footer>
     </div>
   );
 }
