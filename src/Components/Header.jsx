@@ -1,9 +1,7 @@
 import { useState } from "react";
-
 import close from '../assets/close.svg';
 import logo from '../assets/logo.svg';
 import menu from '../assets/menu.svg';
-
 import { navLinks } from "../constants";
 
 const Header = () => {
@@ -12,7 +10,7 @@ const Header = () => {
 
   return (
     <nav className="w-full flex py-6 justify-between items-center navbar">
-      <img src={logo} alt="name" className="w-[124px] h-[32px]" style={{ filter: "invert(1)" }} />
+      <img src={logo} alt="name" className="w-[124px] h-[30px]" style={{ filter: "invert(1)" }} />
 
       <ul className="list-none sm:flex hidden justify-end items-center flex-1">
         {navLinks.map((nav, index) => (
@@ -32,8 +30,8 @@ const Header = () => {
         <img
           src={toggle ? close : menu}
           alt="menu"
-          className="w-[28px] h-[28px] object-contain"
-          onClick={() => setToggle(!toggle)}
+          className="w-[24px] h-[24px] object-contain" // Reduced menu icon size
+          onClick={() => setToggle((prev) => !prev)}
         />
 
         <div
